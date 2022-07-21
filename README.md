@@ -1,1 +1,1 @@
-# Severenchuk.github.io/project/index.html
+# Severenchuk.github.io
