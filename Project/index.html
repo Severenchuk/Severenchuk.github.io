@@ -10,8 +10,9 @@
 </head>
 <body> 
     <nav class="navbar navbar-expand-lg fixed-top ">
-        <a class="navbar-brand" href="#">Додому</a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation”> <span class=“navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="index.html">Додому</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation”> 
+            <span class=“navbar-toggler-icon"> </span>
          </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav mr-4">
@@ -30,12 +31,15 @@
           <li class="nav-item">
             <a class="nav-link "  data-value="contact" href="#">Зв’язатися з нами</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link "  data-value="rundomNumber" href="#">Генератор випадкових чисел</a>
+          </li>
         </ul>
        </div>
     </nav>
     
     <header class="header">
-        <div class="overlay">
+        <div class="overlay"></div>
             <div class="container">
                 <div class="description">
                     <h1>
@@ -43,13 +47,13 @@
                     
                     <p>
                   На сайті Ви знайдете поради щодо вирощування овочів на дачі та рецепти приготування заготовок на зимовий період</p>
-                 
+                  
                    <button class="btn btn-outline-secondary"><a href="https://www.youtube.com/channel/UCC_Ztn8AJQas_nmgpLFXIwg" target="_blank"> Дивитися більше </a></button>
-                     </h1>
+                   </h1> 
                 </div>
                
             </div>
-        </div>       
+               
     </header>
 
 
@@ -236,6 +240,36 @@ name="email">
  </div>
 </div>
 
+
+<div class="generator" id="rundomNumber">
+    <h1 class="text-center">Генератор випадкових чисел</h1>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <img align="center" src="images/d0b3d0.jpg" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 desc">
+            <h3><font color="#DA9F8D">Пропонуємо скористатися нашим генератором випадкових чисел</font></h3>
+                     
+            <div class="number-form" id="number">
+                 <div class="container">
+                    <form name="random" type="number" id="number">
+                        <span id="number-title" align="left"><b>Введіть мінімальне та максимальне значення </b></span>
+                        <br>
+                        <br>
+                    <input type="number" class="form-control form-control-lg" placeholder="Min" id="min">
+                        <br>
+                    <input type="number" class="form-control form-control-lg" placeholder="Max" id="max" >
+                        <br>
+                        <br>
+                    <input type="button" class="form-control form-control-lg" value="Згенерувати випадкове число" onclick="document.querySelector('.result').innerText=Math.floor((Math.random())*(document.querySelector('#max').value-document.querySelector('#min').value+1))-(-document.querySelector('#min').value);"> 
+                    </form>
+                        <br>
+                    <div class="result" ></div>
+                </div>    
+            </div>
+        </div>
+   </div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
