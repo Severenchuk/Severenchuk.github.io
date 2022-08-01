@@ -79,6 +79,7 @@ border-left:4px solid #10828C;
 }
 .about .desc h3{
 color: #10828C;
+
 }
 .about .desc p{
 line-height:2;
@@ -154,8 +155,9 @@ border-radius: 0%
  border-bottom-left-radius: 0;
 }
 .contact-form{
- margin: 6em 0;
+ margin: 10em 0;
  padding: 1em;
+ padding-top: 90px;
  position: relative; 
 }
 .contact-form h1{
@@ -173,6 +175,46 @@ border-radius: 0%
 .contact-form .right .form-control::placeholder{
  color: #888;
  font-size: 16px; }
+
+
+ .generator{
+margin: 4em 0;
+padding: 1em;
+position: relative;
+}
+.generator h1{
+color:#3CB371;
+margin: 2em;
+}
+.generator img{
+height: 100%;
+width: 100%;
+border-radius: 0%
+}
+.generator span{
+display: block;
+color: #888;
+left: 115px;
+}
+.generator .desc{
+padding: 2em;
+border-left:4px solid #10828C;
+}
+.generator .desc h3{
+color: #10828C;
+}
+.generator .desc p{
+line-height:2;
+color:#888;
+}
+
+.result {
+  margin: 1px;
+  padding: 1px; 
+  background: #DA9F8D;
+  font-size: 22px;
+  text-align: center;
+}
 
  @import url('https://fonts.googleapis.com/css?family=Raleway');
 *{
